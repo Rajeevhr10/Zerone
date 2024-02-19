@@ -1,0 +1,277 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+.video-container {
+    position: relative;
+    width: 100%;
+    height: 100vh; 
+    overflow: hidden;
+}
+
+.video-container video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.60);
+    z-index: 2; 
+}
+
+
+.image {
+    position: absolute;
+    width:50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+    filter: brightness(0.7); 
+    animation: floatAnimation 3s ease-in-out infinite alternate;
+}
+@keyframes floatAnimation {
+    0% {
+        transform: translate(-50%, -50%) translateY(0); 
+    }
+    100% {
+        transform: translate(-50%, -50%) translateY(-20px); 
+    }
+}
+
+.btn {
+    position: absolute;
+    top: 20px;
+    right: 20px; 
+    background-color: rgba(255, 255, 255,); 
+    padding: 10px;
+   width:3%;
+   height: 3%;
+    cursor: pointer;
+}
+
+.fa-bars {
+    color: rgb(255, 255, 255); 
+}
+.image-sit{
+    position: absolute;
+    width:70%;
+    top: 10%;
+    left: 52%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+    filter: brightness(0.9);
+}
+.dept-mca{
+    position: absolute;
+    width:35%;
+    top: 32%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+    filter: brightness(0.9);
+}
+.techfluence{
+    position: absolute;
+    width:12%;
+    top: 36%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+    filter: brightness(0.9);
+}
+.geniux{
+    position: absolute;
+    width:12%;
+    top: 36%;
+    right: 9%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+    filter: brightness(0.9);
+}
+.bgmi{
+    position: absolute;
+    width:12%;
+    top: 56%;
+    right: 9%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+    filter: brightness(0.7);
+}
+.dscape{
+    position: absolute;
+    width:12%;
+    top: 56%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+    filter: brightness(0.9);
+}
+.thunt{
+    position: absolute;
+    width:12%;
+    top: 76%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+    filter: brightness(0.9);
+}
+.wisdom{
+    position: absolute;
+    width:12%;
+    top: 74%;
+    right:9%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+    /* filter: brightness(0.9); */
+}
+.coding{
+    position: absolute;
+    width:12%;
+    top: 92%;
+    right:37%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+    filter: brightness(0.8);
+}
+
+
+
+.date{
+    position: absolute;
+    width:35%;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+    filter: brightness(0.9);
+    animation: twinklingAnimation 3s ease-in-out infinite;
+}
+
+@keyframes twinklingAnimation {
+    0% {
+        opacity: 1;
+    }
+    20% {
+        opacity: 0.7;
+    }
+    40% {
+        opacity: 1;
+    }
+    60% {
+        opacity: 0.8;
+    }
+    80% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.box{
+    position: absolute;
+    text-align: center;
+   width:60%;
+    top: 24%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color:rgb(255, 255, 255);
+    font-size: 25px;
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5); 
+    /* border:10px solid cyan; */
+    padding: 15px;
+    border-radius: 10%;
+    box-shadow:2px cyan;
+}
+.about{
+   
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    filter: brightness(0.9);
+    padding-bottom: 10px;
+    z-index: 3;
+    filter: brightness(0.8);
+    color: white;
+}
+
+
+
+
+.scan{
+    position: absolute;
+    width:38%;
+    top: 65%;
+    left:17%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+    filter: brightness(0.8);
+}
+.qr-scan{
+    position: absolute;
+    width:10%;
+    top: 80%;
+    left:17%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+    filter: brightness(0.5);
+}
+.contact-us{
+    position: absolute;
+    width:15%;
+    top: 65%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+    filter: brightness(0.8);
+}
+.co{
+    position: absolute;
+    width:25%;
+    top: 65%;
+    left:80%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+    filter: brightness(0.8);
+}
+
+
+
+#grid
+
+.video-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.grid-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 10px;
+}
+
+.grid-item {
+    overflow: hidden;
+}
+
+.grid-item img {
+    width: 100%;
+    height: auto;
+}
+
